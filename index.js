@@ -24,7 +24,7 @@ function latestTweet(err, data) {
     } else {
         var id = {
             id: data.statuses[0].id_str
-        }
+        };
         bot.post("statuses/retweet/:id", id, retweeted); 
     }
 }
